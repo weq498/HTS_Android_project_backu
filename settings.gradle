@@ -1,0 +1,2 @@
+include ':app'
+include 'libs/commons-codec-1.10.jar'

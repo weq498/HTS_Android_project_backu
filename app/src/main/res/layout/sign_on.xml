@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_accunt_btn"
+        android:id="@+id/textView5"
+        android:textColor="#000000"
+        android:textSize="65sp"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="60sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="155sp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_id"
+                        android:id="@+id/textView4"
+                        android:textSize="45sp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userID"
+                        android:textSize="45sp"
+                        android:layout_marginLeft="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passwd"
+                        android:id="@+id/textView9"
+                        android:textSize="45sp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/passwd"
+                        android:textSize="45sp"
+                        android:layout_marginLeft="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirm_passwd"
+                        android:id="@+id/textView10"
+                        android:textSize="45sp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/confirm_passwd"
+                        android:textSize="45sp"
+                        android:layout_marginLeft="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:id="@+id/textView6"
+                        android:textSize="45sp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:textSize="45sp"
+                        android:layout_marginLeft="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sex"
+                        android:id="@+id/textView7"
+                        android:textSize="45sp"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:id="@+id/radioButton"
+                        android:textSize="45sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:id="@+id/radioButton2"
+                        android:textSize="45sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/textView8"
+                android:textSize="45sp"
+                android:textColor="#000000"
+                android:singleLine="false" />
+
+            <EditText
+                android:layout_width="500sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textSize="45sp"
+                android:layout_marginLeft="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="155sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:id="@+id/confirm"
+                android:textSize="45sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:id="@+id/clear"
+                android:textSize="45sp"
+                android:layout_marginLeft="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_menu"
+                android:id="@+id/return_menu"
+                android:layout_marginLeft="20sp"
+                android:textSize="45sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
