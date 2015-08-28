@@ -15,10 +15,13 @@ import android.view.ViewGroup;
 public class login_menu extends ActionBarActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_menu);
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            statuslist_fragment statuslist_fragment = new statuslist_fragment();
+            transaction.replace(R.id.Show_staticlist, statuslist_fragment);
+            transaction.commit();
 
     }
 }
