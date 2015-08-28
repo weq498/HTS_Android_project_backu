@@ -2,6 +2,7 @@ package com.example.weq498.hts;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -74,8 +75,12 @@ public class MainActivity extends ActionBarActivity {
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                select_userID(userID.getText().toString());
-                login(password.getText().toString());
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,login_menu.class);
+                startActivity(intent);
+                finish();
+                //select_userID(userID.getText().toString());
+                //login(password.getText().toString());
             }
         });
         //signin
